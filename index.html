@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistem Informasi Data Mahasiswa - Praktikum 1- PPWA</title>
+</head>
+<body id="top">
+<header>
+<h1>Sistem Informasi Data Mahasiswa - Praktikum 1</h1>
+<p>Sistem ini menampilkan informasi dan data mahasiswa 
+</p>
+<img src="gheaa.jpeg"
+     alt="Foto Ghea Putri Nashirah"
+     width="300"
+     height="440">
+</header>
+<hr>
+<nav>
+<ul>
+<li>
+<a href="#informasi">Informasi Aplikasi</a>
+</li>
+<li>
+<a href="#daftar-mahasiswa">Daftar Mahasiswa</a>
+</li>
+<li>
+<a href="#form-tambah">Tambah Mahasiswa Baru</a>
+</li>
+</ul>
+</nav>
+<hr>
+<main>
+<section id="informasi">
+<h2>Informasi Sistem</h2>
+<p>
+Sistem Informasi Data Mahasiswa digunakan untuk menampilkan
+informasi data mahasiswa.
+</p>
+<article>
+<h3>Tentang Sistem</h3>
+<p>
+Sistem ini dibuat menggunakan HTML5 untuk menyusun struktur
+halaman web dan menampilkan informasi data mahasiswa.
+</p>
+</article>
+</section>
+<hr>
+<section id="daftar-mahasiswa">
+<h2>Daftar Mahasiswa Aktif</h2>
+<p>
+Berikut merupakan daftar mahasiswa yang terdaftar dalam
+sistem informasi data mahasiswa.
+</p>
+
+<table border="1" cellpadding="8" cellspacing="0">
+
+<thead>
+
+<tr>
+<th colspan="7">Data Mahasiswa</th>
+</tr>
+
+<tr>
+<th>No</th>
+<th>NPM</th>
+<th>Nama Lengkap</th>
+<th>Program Studi</th>
+<th>Angkatan</th>
+<th>Email</th>
+<th>Status</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>1</td>
+<td>2415061012</td>
+<td>Fadhel Akmal Hakim</td>
+<td>Teknik Informatika</td>
+<td>2024</td>
+<td>fadhel@gmail.com</td>
+<td>Aktif</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>2415061013</td>
+<td>Bram Hafiz</td>
+<td>Teknik Informatika</td>
+<td>2024</td>
+<td>bram@gmail.com</td>
+<td>Aktif</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>2415061011</td>
+<td>Ghea Putri Nashirah</td>
+<td>Teknik Informatika</td>
+<td>2024</td>
+<td>gheaputrinashirah@gmail.com</td>
+<td>Aktif</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+<hr>
+
+<section id="form-tambah">
+
+<h2>Tambah Mahasiswa Baru</h2>
+
+<p>
+Silakan isi formulir berikut untuk menambahkan data mahasiswa baru.
+</p>
+
+<form action="#" method="POST">
+
+<fieldset>
+
+<legend>Data Mahasiswa</legend>
+
+<p>
+
+<label for="npm">
+Nomor Pokok Mahasiswa (NPM)
+</label>
+
+<br>
+
+<input
+type="text"
+id="npm"
+name="npm"
+placeholder="Contoh : 2315061118"
+required
+pattern="[0-9]{8,12}"
+title="NPM harus berupa angka 8-12 digit">
+
+<br>
+
+<small>
+NPM harus berupa angka 8-12 digit.
+</small>
+
+</p>
+
+<p>
+
+<label for="nama">
+Nama Lengkap:
+</label>
+
+<br>
+
+<input
+type="text"
+id="nama"
+name="nama"
+placeholder="Contoh : Daffa Rizky"
+required
+minlength="3"
+maxlength="100">
+
+<br>
+
+<small>
+Nama lengkap minimal 3 karakter.
+</small>
+
+</p>
+
+<p>
+
+<label for="program_studi">
+Program Studi:
+</label>
+
+<br>
+
+<select
+id="program_studi"
+name="program_studi"
+required>
+
+<option value="">
+Pilih Program Studi
+</option>
+
+<option value="Teknik Informatika">
+Teknik Informatika
+</option>
+
+</select>
+
+<br>
+
+<small>
+Silakan pilih program studi.
+</small>
+
+</p>
+
+<p>
+
+<label for="angkatan">
+Tahun Angkatan:
+</label>
+
+<br>
+
+<input
+type="number"
+id="angkatan"
+name="angkatan"
+placeholder="Contoh : 2024"
+required
+min="2018"
+max="2026">
+
+<br>
+
+<small>
+Tahun angkatan 2018-2026.
+</small>
+
+</p>
+
+<p>
+
+<label for="email">
+Alamat Email:
+</label>
+
+<br>
+
+<input
+type="email"
+id="email"
+name="email"
+placeholder="Contoh : mahasiswa@unila.ac.id"
+required>
+
+<br>
+
+<small>
+Masukkan alamat email yang valid.
+</small>
+
+</p>
+
+<p>
+
+<button type="submit">
+Simpan Data Mahasiswa
+</button>
+
+<button type="reset">
+Reset Formulir
+</button>
+
+</p>
+
+</fieldset>
+
+</form>
+
+</section>
+
+</main>
+
+<hr>
+
+<footer>
+
+<p>
+&copy; 2026 Sistem Informasi Data Mahasiswa
+</p>
+
+<p>
+Email:
+<a href="mailto:ghea@gmail.com">
+ghea@gmail.com
+</a>
+</p>
+
+<p>
+<a href="#top">
+&uarr; Kembali ke Atas
+</a>
+</p>
+
+</footer>
+
+</body>
+
+</html>
