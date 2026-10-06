@@ -1,0 +1,12 @@
+#Editor &IDE
+.vscodr/
+.idea/
+*.swp
+
+#OS metadaya
+.DS_Stire
+Thumbs.db
+
+#Logs & build cache
+*.log
+.cache/
